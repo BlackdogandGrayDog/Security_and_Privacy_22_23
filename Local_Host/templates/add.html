@@ -1,0 +1,41 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Add Data</h1>
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    <form action="{{ url_for('add_data') }}" method="POST">
+        <div class="mb-3">
+            <label class="form-label">Mean Radius</label>
+            <input type="text" class="form-control" name="mean_radius">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mean Texture</label>
+            <input type="text" class="form-control" name="mean_texture">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mean Perimeter</label>
+            <input type="text" class="form-control" name="mean_perimeter">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mean Area</label>
+            <input type="text" class="form-control" name="mean_area">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mean Smoothness</label>
+            <input type="text" class="form-control" name="mean_smoothness">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Diagnosis</label>
+            <input type="text" class="form-control" name="diagnosis">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Add Data</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

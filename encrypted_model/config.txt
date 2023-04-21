@@ -1,0 +1,6 @@
+
+{
+    "alice": "Localhost:5000",
+    "bob": "Localhost:5001",
+    "crypto-producer": "Localhost:5002"
+}

@@ -1,0 +1,20 @@
+name: security-final
+
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+    - numpy
+    - scipy
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    - keras
+    - tensorflow
+    - datetime
+    - spyder-kernels
+    - OpenCV-python
+    - keras-applications
+    - keras-preprocessing
+    - flask
